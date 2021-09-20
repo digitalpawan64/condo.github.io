@@ -1,0 +1,560 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "MYRIADPRO-REGULAR", sans-serif;
+  color:#fff;
+}
+
+@font-face {
+font-family: "CustomFont";
+src: url("C:/Users/DELL/Desktop/Condo-hunter/assets/MYRIADPRO-REGULAR.otf");
+src: url("C:/Users/DELL/Desktop/Condo-hunter/assets/Angie Bold.ttf");
+src: url("C:/Users/DELL/Desktop/Condo-hunter/assets/Angie-Regular.ttf");
+
+
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  position: relative;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0px;
+  display: flex;
+    align-items: center;
+}
+
+
+
+
+.list-item {
+  
+  list-style-type: none;
+ /* margin:0.2rem 0.2rem;*/
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding:0.6rem 0.8rem;
+  transition: all 0.1s ease;
+  color: black;
+  margin: 0.6rem;
+   font-family: "MYRIADPRO-REGULAR", sans-serif;
+}
+
+
+.navbar .list-item:hover a{
+  border-bottom: 2px #000 solid;
+  /*border-top: 2px #000 solid;*/
+  transition: all;
+}
+
+.navbar .list-item a:active {
+  border-bottom: 2px #000 solid;
+  /*border-top: 2px #000 solid;*/
+  transition: all;
+}
+
+.navbar .list-item:hover:last-child a{
+  border-bottom: none;
+  border-top: none;
+  
+}
+
+.logo a{
+    text-decoration: none;
+    font-size:18px;
+    text-transform: uppercase;
+}
+.logo a:hover{
+    border-bottom: 3px solid #fff;
+    margin-bottom:8px;
+}
+
+
+
+.app-btn{
+	background: #FC583D;
+  padding: 15px 25px;
+	border-radius:15px ;
+  border: none;
+}
+
+.app-btn a{
+  color: #fff;
+}
+
+
+
+
+  
+/*Navbar End*/
+
+.banner-section{
+	width: 100%;
+	height: 780px;
+	background-image: url(C:/Users/DELL/Desktop/Condo-hunter/assets/images/bg.png);
+		
+	background-size: cover;
+}
+
+.banner{
+	display: flex;
+
+}
+
+
+.banner-content{
+	transform: translate(50px, 250px);
+	margin-left: 115px;
+}
+
+
+.banner-content h1{
+	font-size: 54px;
+	color: black;
+   font-family: "MYRIADPRO-REGULAR", sans-serif;
+}
+
+.banner-content a img{
+	width: 180px;
+    height: 60px;
+}
+
+.banner-content p{
+	margin: 20px 0;
+	color: #000;
+}
+
+
+/*.banner-section-2{
+	justify-content: flex-end;
+}*/
+
+.banner-rectangle{
+	position: absolute;
+	left: 703px;	
+	height: 500px;
+
+}
+
+.banner-mobile-image img{
+	position: absolute;
+	left: -107px;
+	top: 100px;
+	height: 600px;
+	
+
+}
+
+.ban-img-1{
+	position: absolute;
+	height: 500px;
+	left: 510;
+}
+
+@media screen and (max-width: 768px) {
+  .ban-img-1{
+  position: absolute;
+  height: 300px;
+  left: 410px;
+}
+
+.banner-content{
+  transform: translate(-90px, 250px);
+  
+}
+
+.banner-rectangle{
+  display: none!important;
+
+}
+}
+
+/*End Banner*/
+
+
+
+
+/*Start Feature Section*/
+
+#feature-section{
+	width: 100%;
+	height: 600px;
+}
+.feature-card{
+
+	margin: 10px;
+	padding: 100px;
+}
+
+.feature-card img{
+ width: 80px;
+ margin: 0 auto;
+ background: #ffd6b7;
+ padding: 20px;
+ border-radius: 30px;
+
+}
+
+.feature-card h5{
+ color: black;
+ font-size: 18px;
+ margin: 10px auto;
+ text-align: center;
+
+}
+
+.feature-top-right h3{
+  color: #fc583d;
+
+}
+.feature-top-right p{
+  color: #000;
+}
+
+.feature-top-right{
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.feature-top-right h2{
+  margin: 10px auto;
+  font-family: "Angie-Regular", sans-serif;
+}
+
+.card-slider{
+  padding: 100px;
+}
+.feature-card{
+      
+      perspective: 1000px;
+    }
+
+    .feature-card{
+      transform: rotateY(0);
+      transition: all 0.5s ease-in-out 0s;
+    }
+    .feature-card:hover .box{
+      transform: rotateY(-90deg);
+    }
+
+     
+        .box-content{
+          width: 100%;
+          height: 360px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 60px 60px;
+          border:1px white solid;
+          box-sizing: border-box;
+          border-radius: 30px;
+          box-shadow: 0 0 10px lightgrey;
+          text-align: center;
+          background-color: #fff;
+          opacity: 0.7;
+          transform: rotateY(90deg);
+          transition: all 0.5s ease-in-out 0s;
+        }
+
+        .feature-card:hover .box-content{
+          transform: rotate(0);
+        }
+
+        .box-content p{
+          color: black!important;
+        }
+
+
+.card-slider .slick-next {
+    right: 73px !important;
+    top: 0!important;
+    font-size: 18px!important;
+    border-radius: 50%!important;
+    background: transparent!important;
+
+}
+
+.card-slider .slick-prev {
+  left: 1300px!important;
+    top: 0!important;
+    font-size: 18px!important;
+    border-radius: 50%!important;
+    background: transparent!important;
+
+}
+
+.slick-next::before {
+    content: "→";
+    font-size: 18px;
+    color: #FC583D!important;
+}
+
+.slick-prev::before {
+    content: "→";
+    font-size: 18px;
+    color: #FC583D!important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .slick-next,.slick-prev {
+    display: none!important;
+  }
+}
+
+
+    
+
+
+
+/*feature end*/
+
+.content{
+  background: url(C:/Users/DELL/Desktop/Condo-hunter/assets/images/content.bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+}
+
+
+
+
+h2{
+  color: black;
+  font-size: 60px;
+  font-family: "Angie Bold",sans-serif;
+
+}
+
+.content-top{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top:100px;
+}
+
+.content-top-right p{
+  color: #000;
+  margin: 20px 0;
+}
+
+.content-top-left img{
+    height: 600px;
+}
+
+.content-top-right a,.content-top-right h3 ,  .content-top-right a i{
+ color: #fc583d;
+ text-decoration: none;
+}
+
+.content-bottom{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-bottom-right p{
+  color: #000;
+  margin: 20px 0;
+}
+
+.content-bottom-left img{
+    height: 600px;
+}
+
+.content-bottom-right a,.content-bottom-right h3, .content-bottom-right a i{
+ color: #fc583d;
+ text-decoration: none;
+}
+
+
+/*Testimonials*/
+
+#testimonial{
+  padding-top:60px;
+  padding-bottom:80px;
+}
+.testimonial-top-right h3{
+  color: #fc583d;
+
+}
+.testimonial-top-right{
+  text-align: center;
+  margin: 80px 0;
+}
+
+
+
+.testimonial-card{
+  margin: 10px;
+  padding: 100px;
+ /* background-color:lightgrey!important;*/
+  border-radius: 30px;
+  box-shadow: 0 0 10px lightgrey;
+  padding: 50px;
+}
+
+.testimonial-card img{
+ width: 80px;
+ margin: 0 auto;
+}
+
+.testimonial-card h5{
+ color: black;
+ font-size: 18px;
+ margin: 10px auto;
+ text-align: center;
+
+}
+
+.testimonial-card p{
+  color: #000;
+  text-align: center;
+}
+
+.testimonial-card{
+  background: white;
+}
+
+
+.testi-card-slider .slick-next {
+    right: 680px !important;
+    top: 368px!important;
+    font-size: 18px!important;
+    border-radius: 50%!important;
+    background: transparent!important;
+
+}
+
+.testi-card-slider .slick-prev {
+  left: 685px !important;
+    top: 368px!important;
+    font-size: 18px!important;
+    border-radius: 50%!important;
+    background: transparent!important;
+
+}
+
+/*End Testimonial*/
+
+
+/*Footer Start*/
+ .footer{
+  background: url(C:/Users/DELL/Desktop/Condo-hunter/assets/images/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 730px;
+  width: 100%;
+ }
+
+.footer-top{
+  display: flex;
+  justify-content: space-around;;
+  align-items: center;
+  
+}
+
+.footer-bottom-right .list-item a {
+  text-decoration: none;
+  display: block;
+  padding:0.6rem 0.8rem;
+  transition: all 0.1s ease;
+  color: black;
+}
+
+
+.footer-top-left{
+  margin-left: 150px;
+}
+
+.footer-top-left h2{
+  font-size: 49px;
+}
+
+ .footer-top-left p{
+  color: #000;
+  margin: 30px 0;
+}
+
+.footer-top-right img{
+    height: 600px;
+}
+
+.footer-top-left a,.footer-top-left h3{
+ color: #fc583d;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+  
+}
+
+
+.footer-top-right img{
+    height: 600px;
+}
+
+
+
+.footer-bottom-right ul {
+  display: flex;
+  padding: 0px;
+}
+
+.playstore img{
+  width: 130px;
+  height: 50px;
+}
+
+.footer-bottom-center img{
+  width: 200px;
+  height: 80px;
+}
+
+.footer-btn{
+  background: #FC583D;
+  padding: 15px;
+  border-radius:20px ;
+}
+
+.footer-btn span{
+
+  color: #fff !important;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 44px;
+  color: #757575;
+  font-weight: 500;
+  font-family: "Nunito";
+  height: 74px;
+  text-align: center;
+  display: flex;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top-right img{
+    height: 300px;
+    width: auto;
+}
+
+}
+
+/*Footer End*/
+
